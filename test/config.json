@@ -1,0 +1,135 @@
+{
+    "RULES": {
+      "ECG": {
+        "META": {
+          "PREFIX": "EG"
+        },
+        "Date": {
+          "KEY": [
+            "measurement",
+            "date"
+          ],
+          "EXPORT": "EGDAT",
+          "NAME": "Dat",
+          "CDISC": true,
+          "RESEARCH": true
+        },
+        "Sup": {
+          "KEY": [
+            "supine"
+          ],
+          "NAME": "TimSup",
+          "CDISC": false,
+          "RESEARCH": false
+        },
+        "Meas": {
+          "KEY": [
+            "measurement",
+            "time"
+          ],
+          "NAME": "MeasTim",
+          "EXPORT": "EGTIM",
+          "CDISC": true,
+          "RESEARCH": true
+        },
+        "RR": {
+          "KEY": [
+            "RR"
+          ],
+          "EXPORT": "EGRES_R",
+          "NAME": "_RR",
+          "CDISC": true,
+          "RESEARCH": true
+        },
+        "PR": {
+          "KEY": [
+            "PR"
+          ],
+          "NAME": "_PR",
+          "EXPORT": "EGRES_P",
+          "CDISC": true,
+          "Reasearch": true
+        },
+        "Heart": {
+          "EXPORT": "EGRES_H",
+          "NAME": "_HR",
+          "CDISC": true,
+          "RESEARCH": true
+        },
+        "QRS": {
+          "KEY": [
+            "QRS",
+            "QRSD"
+          ],
+          "EXPORT": "EGRES_QS",
+          "NAME": "_QRSD",
+          "CDISC": true,
+          "RESEARCH": true
+        },
+        "QT": {
+          "KEY": [
+            "QT"
+          ],
+          "EXPORT": "EGRES_QT",
+          "NAME": "_QT",
+          "CDISC": true,
+          "RESEARCH": true
+        },
+        "QTcF": {
+          "KEY": [
+            "QTcF"
+          ],
+          "EXPORT": "EGRES_QF",
+          "NAME": "_QTcF",
+          "CDISC": true,
+          "RESEARCH": true
+        },
+        "QTcB": {
+          "KEY": [
+            "QTcB"
+          ],
+          "EXPORT": "EGRES_QS",
+          "NAME": "_QTcF",
+          "CDISC": true,
+          "RESEARCH": true
+        }
+      },
+      "Vital": {
+        "META": {
+          "PREFIX": "VS"
+        },
+        "Heart": {
+          "EXPORT": "VORRES_H"
+        },
+        "RR": {
+          "EXPORT": "EGRES_R"
+        },
+        "PR": {
+          "EXPORT": "EGRES_P"
+        }
+      }
+    },
+    "COLUMNS": {
+      "Forms": {
+        "INPUT": {
+          "EXPORT": 4,
+          "NAME": 2,
+          "DESCRIPTION": 7
+        },
+        "OUTPUT": {
+          "EXPORT": 5,
+          "NAME": 3
+        }
+      }
+    },
+    "TIMEPOINTS": {
+      "SCREENING": "Sc",
+      "PREDOSE": "Pre",
+      "POSTDOSE": "PD",
+      "PRE-DOSE": "Pre",
+      "POST-DOSE": "PD",
+      "POST DOSE": "PD",
+      "PRE DOSE": "PD",
+      "EOS": "EOS"
+    }
+  }
